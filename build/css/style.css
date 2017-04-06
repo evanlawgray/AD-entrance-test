@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  height: 100vh;
+  width: 100vw; }
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #62F8FF; }
+
+html, body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75rem; }
+
+h2 {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+ul {
+  height: 35%;
+  min-height: 300px;
+  width: 50%;
+  min-width: 320px;
+  margin-top: 4rem;
+  padding: 3%;
+  border: 1px dashed darkgray;
+  border-radius: 8px;
+  list-style: none;
+  background-color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+
+button {
+  height: 100px;
+  width: 300px;
+  margin: 10px;
+  font-size: 1.5rem;
+  box-shadow: inset 0 0 12px lightgray;
+  border-radius: 5px;
+  transition: border-radius 0.25s ease; }
+  button:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 12px lightgray, 2px 2px 5px black; }
+
+.correct-answer {
+  background: #62FF57; }
+
+.incorrect-answer {
+  background: #E03F3B; }
+
+.screen {
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+#score-screen {
+  display: none; }
+
+.score-panel {
+  height: 100%;
+  width: 75%;
+  min-width: 300px;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .score-panel button {
+    margin-top: 3rem; }
+
+.score-counter {
+  height: 15%;
+  width: 100%;
+  text-align: right;
+  background: lightgray; }
+
+.score-readout, .grade-readout {
+  margin: 5rem auto 0;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2.5rem; }
+
+#quiz-screen {
+  display: none;
+  opacity: 0; }
+
+.score-counter {
+  font-size: 2rem;
+  color: red;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.quiz-panel {
+  margin-bottom: 5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.question-text {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center; }

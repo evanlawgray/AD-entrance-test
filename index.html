@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<title>Pop Quiz!</title>
+		<meta name="viewport" content="width=device-width" initial-scale="1">
+		<link rel="stylesheet" type="text/css" href="./build/css/style.min.css">
+	</head>
+    <body>
+        <div id="welcome-screen" class="screen">
+            <h2 class="welcome-header">Which quiz would you like?</h2>
+
+            <ul class="quiz-select-buttons">
+                <li>
+                    <button id="quiz-1" class="quiz-select-button" type="button">Abstract Quiz</button>
+                </li>
+
+                <li>
+                    <button id="quiz-2" class="quiz-select-button" type="button">Dev Quiz</button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="score-counter"></div>
+
+            <section class="quiz-panel">
+                <h2 class="question-number"></h2>
+                <p class="question-text"></p>
+
+                <ul class="answer-buttons">
+                    <li>
+                        <button id="answer-1" class="answer-button" type="button"></button>
+                    </li>
+
+                    <li>
+                        <button id="answer-2" class="answer-button" type="button"></button>
+                    </li>
+
+                    <li>
+                        <button id="answer-3" class="answer-button" type="button"></button>
+                    </li>
+
+                    <li>
+                        <button id="answer-4" class="answer-button" type="button"></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div id="score-screen" class="screen">
+            <section class="score-panel">
+                <p class="score-readout"></h2>
+
+                <p class="grade-readout"></p>
+
+                <button id="restart-button" type="button">Try Again</button>
+            </section>
+        </div>
+        <script type="text/javascript" src="./library/jquery-3.1.0.js"></script>
+        <script type="text/javascript" src="./build/js/main.min.js"></script>
+    </body>
+</html>

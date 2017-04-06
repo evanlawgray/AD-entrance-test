@@ -1,0 +1,24 @@
+#quiz-screen {
+    display: none;
+    opacity: 0;
+}
+
+.score-counter {
+    font-size: 2rem;
+    color: red;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-panel {
+    margin-bottom: 5rem;
+    @include flex-column(nowrap, flex-start);
+}
+
+.question-text {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
